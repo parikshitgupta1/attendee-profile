@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{ .Title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Playfair+Display:700|Raleway:500.700"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-142141767-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-142141767-1");
+    </script>
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <h1 class="title">Open Source Contributors - Hacktoberfest,Mumbai 2020</h1>
+
+    <div id="app" class="container">
+      <card
+        data-image="https://avatars1.githubusercontent.com/u/45290746?s=400&u=b0180fe323c0745b87bcaf844804662cbec305e7&v=4"
+        data-github="parikshitgupta1"
+      >
+        <h1 slot="header">Parikshit Gupta</h1>
+        <p slot="content">Community Manager - The S.C.R.I.P.T Group</p>
+      </card>
+
+      {{ range (where .Site.RegularPages "Section" "participant") }}
+      <card
+        data-github="{{ .Params.github }}"
+        data-image="/images/{{ .Params.image }}"
+      >
+        <h1 slot="header">
+          {{ .Params.name }}
+        </h1>
+        <p slot="content">
+          {{ .Params.institution }}
+        </p>
+      </card>
+      {{ end }}
+    </div>
+    <!-- partial -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js"></script>
+    <script src="/script.js"></script>
+  </body>
+</html>
