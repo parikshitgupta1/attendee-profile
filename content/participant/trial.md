@@ -1,7 +1,7 @@
 ---
-Name: Parikshit Gupta
-institution: MIT-WPU, Pune
-image: 1.png
-quote: this is a trail
-github: parikshitgupta1
+Name: Hacktoberfest
+institution: DigitalOcean
+image: https://github.com/Hacktoberfest.png
+quote: Let's celebrate a month-long of hacking!
+github: Hacktoberfest
 ---
