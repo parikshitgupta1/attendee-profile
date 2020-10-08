@@ -33,24 +33,19 @@
     <h1 class="title">Open Source Contributors - Hacktoberfest,Mumbai 2020</h1>
 
     <div id="app" class="container">
-      <card
-        data-image="https://avatars1.githubusercontent.com/u/45290746?s=400&u=b0180fe323c0745b87bcaf844804662cbec305e7&v=4"
-        data-github="parikshitgupta1"
-      >
-        <h1 slot="header">Parikshit Gupta</h1>
-        <p slot="content">Community Manager - The S.C.R.I.P.T Group</p>
-      </card>
-
       {{ range (where .Site.RegularPages "Section" "participant") }}
       <card
         data-github="{{ .Params.github }}"
-        data-image="/images/{{ .Params.image }}"
+        data-image="{{ .Params.image }}"
       >
         <h1 slot="header">
           {{ .Params.name }}
         </h1>
         <p slot="content">
-          {{ .Params.institution }}
+          <b>{{ .Params.institution }}</b>
+        </p>
+        <p slot="content">
+          {{ .Params.quote }}
         </p>
       </card>
       {{ end }}
