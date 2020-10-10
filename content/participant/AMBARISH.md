@@ -1,7 +1,7 @@
 ---
-Name: your name here
-institution: your organization/univ here
-image: https://github.com/your github username here.png
-quote: your quote here 
-github: your github username here 
+Name: Ambarish Chivane
+institution: MIT-WPU, Pune
+image: https://github.com/ambarish1411
+quote: I am awesome
+github: ambarish
 ---
