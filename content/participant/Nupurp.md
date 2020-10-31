@@ -1,13 +1,7 @@
 ---
-
 Name: Nupur Patil
-
 institution: Harvard
-
-image: https://github.com/nupur0603.png
-
+image: https://github.com/nupurp0603.png
 quote: best rant
-
-github: nupur0603
-
+github: nupurp0603
 ---
